@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e24beb05-7d66-4c96-a12c-4969a3616402" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myenv/Lib/site-packages/Django-2.0.7.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/myenv/Lib/site-packages/Django-2.0.7.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myenv/Scripts/django-admin.exe" beforeDir="false" afterPath="$PROJECT_DIR$/myenv/Scripts/django-admin.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whichisblank/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/whichisblank/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whichisblank/whichisblank/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/whichisblank/whichisblank/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whichisblank/whichisblank/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/whichisblank/whichisblank/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whichisblank/whichisblank/templates/whichisblank/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/whichisblank/whichisblank/templates/whichisblank/home.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,11 +17,20 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/whichisblank/whichisblank/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            <state relative-caret-position="136">
+              <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding>
                 <element signature="e#636#668#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/whichisblank/whichisblank/static/whichisblank/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -58,8 +62,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/whichisblank/whichisblank/templates/whichisblank/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="119">
+              <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -98,15 +102,16 @@
         <option value="$PROJECT_DIR$/whichisblank/whichisblank/admin.py" />
         <option value="$PROJECT_DIR$/whichisblank/whichisblank/settings.py" />
         <option value="$PROJECT_DIR$/whichisblank/views.py" />
+        <option value="$PROJECT_DIR$/whichisblank/whichisblank/static/whichisblank/css/style.css" />
         <option value="$PROJECT_DIR$/whichisblank/whichisblank/templates/whichisblank/home.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1083" />
-    <option name="y" value="-599" />
-    <option name="width" value="1081" />
-    <option name="height" value="1082" />
+    <option name="x" value="-1077" />
+    <option name="y" value="-598" />
+    <option name="width" value="1062" />
+    <option name="height" value="1022" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -132,6 +137,30 @@
               <item name="whichisblank" type="462c0819:PsiDirectoryNode" />
               <item name="whichisblank" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="which-is-blank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="which-is-blank" type="462c0819:PsiDirectoryNode" />
+              <item name="whichisblank" type="462c0819:PsiDirectoryNode" />
+              <item name="whichisblank" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="which-is-blank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="which-is-blank" type="462c0819:PsiDirectoryNode" />
+              <item name="whichisblank" type="462c0819:PsiDirectoryNode" />
+              <item name="whichisblank" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="whichisblank" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="which-is-blank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="which-is-blank" type="462c0819:PsiDirectoryNode" />
+              <item name="whichisblank" type="462c0819:PsiDirectoryNode" />
+              <item name="whichisblank" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="whichisblank" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -141,7 +170,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -226,15 +255,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1083" y="-599" width="1081" height="1082" extended-state="0" />
+    <frame x="-1077" y="-598" width="1062" height="1022" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21596244" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21988527" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.15305068" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1631753" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -310,16 +339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/whichisblank/whichisblank/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-          <folding>
-            <element signature="e#636#668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/whichisblank/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -330,10 +349,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/whichisblank/whichisblank/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="e#636#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/whichisblank/whichisblank/static/whichisblank/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/whichisblank/whichisblank/templates/whichisblank/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="119">
+          <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
         </state>
       </provider>
     </entry>
