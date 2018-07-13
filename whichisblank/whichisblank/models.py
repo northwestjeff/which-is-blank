@@ -8,3 +8,10 @@ class Question(models.Model):
 
 class Author(models.Model):
     author_name = models.CharField(max_length=200)
+
+
+class CompareHistory(models.Model):
+
+class Entity(models.Model):
+
+class Guess(models.Mode:l)
