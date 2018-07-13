@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e24beb05-7d66-4c96-a12c-4969a3616402" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/whichisblank/whichisblank/templates/whichisblank/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/whichisblank/whichisblank/templates/whichisblank/home.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,8 +61,17 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/whichisblank/whichisblank/templates/whichisblank/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+            <state relative-caret-position="102">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/whichisblank/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -103,6 +111,8 @@
         <option value="$PROJECT_DIR$/whichisblank/whichisblank/settings.py" />
         <option value="$PROJECT_DIR$/whichisblank/views.py" />
         <option value="$PROJECT_DIR$/whichisblank/whichisblank/static/whichisblank/css/style.css" />
+        <option value="$PROJECT_DIR$/whichisblank/whichisblank/base.html" />
+        <option value="$PROJECT_DIR$/whichisblank/templates/base.html" />
         <option value="$PROJECT_DIR$/whichisblank/whichisblank/templates/whichisblank/home.html" />
       </list>
     </option>
@@ -135,31 +145,7 @@
               <item name="which-is-blank" type="b2602c69:ProjectViewProjectNode" />
               <item name="which-is-blank" type="462c0819:PsiDirectoryNode" />
               <item name="whichisblank" type="462c0819:PsiDirectoryNode" />
-              <item name="whichisblank" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="which-is-blank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="which-is-blank" type="462c0819:PsiDirectoryNode" />
-              <item name="whichisblank" type="462c0819:PsiDirectoryNode" />
-              <item name="whichisblank" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="which-is-blank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="which-is-blank" type="462c0819:PsiDirectoryNode" />
-              <item name="whichisblank" type="462c0819:PsiDirectoryNode" />
-              <item name="whichisblank" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="whichisblank" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="which-is-blank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="which-is-blank" type="462c0819:PsiDirectoryNode" />
-              <item name="whichisblank" type="462c0819:PsiDirectoryNode" />
-              <item name="whichisblank" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="whichisblank" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -177,8 +163,9 @@
       <recent name="C:\Users\Jeff Bailey\projects\which-is-blank\whichisblank\whichisblank\migrations" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Jeff Bailey\projects\which-is-blank\whichisblank\whichisblank" />
+      <recent name="C:\Users\Jeff Bailey\projects\which-is-blank\whichisblank\templates" />
       <recent name="C:\Users\Jeff Bailey\projects\which-is-blank\whichisblank" />
+      <recent name="C:\Users\Jeff Bailey\projects\which-is-blank\whichisblank\whichisblank" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -366,10 +353,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/whichisblank/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/whichisblank/whichisblank/templates/whichisblank/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+        <state relative-caret-position="102">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
         </state>
       </provider>
     </entry>

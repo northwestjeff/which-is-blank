@@ -1,21 +1,9 @@
-{% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>HOME</title>
-    <link rel="stylesheet" href="{% static 'whichisblank/css/style.css'%}">
-</head>
-<body>
+{% extends 'base.html' %}
 
-<h2>home</h2>
+{% block content %}
+    <h3>from home.html</h3>
 
-    {% block content %}
-        <h3>{{ authors }}</h3>
-    {% endblock %}
+{% endblock %}
 
-<h4>body</h4>
 
-</body>
-</html>
