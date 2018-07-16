@@ -16,11 +16,15 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path
-# from whichisblank import views as which_views
 import views as which_views
-# from whichisblank import views as whichisblank_views
+
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^$', which_views.home, name='home')
+    url(r'^$', which_views.home, name='home'),
+    url(r'^signup/$', which_views.signup, name='signup')
 ]
+
+
