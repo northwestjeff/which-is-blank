@@ -4,6 +4,19 @@
 {% block content %}
     <h3>from home.html</h3>
 
+    {{countries|length}}{% for i in countries %}
+        {{i.country_name}}
+    {% endfor %}
+
+    {% for i in data %}
+        {{i.id}}
+    {% endfor %}
+
+
+
+
+
+
 {% endblock %}
 
 

@@ -1,8 +1,10 @@
+import csv
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
+from country_area_parse import create_country_db
 
-from whichisblank.models import Question, User, Author
+from whichisblank.models import User, Author, Country
 
 def signup(request):
     if request.method == "POST":
@@ -19,10 +21,26 @@ def signup(request):
     return render(request, 'whichisblank/signup.html', {'form': form})
 
 
-
-
 def home(request):
-    users = User.objects.all()
-    authors = Author.objects.all()
-    return render(request, 'whichisblank/home.html', {"authors": authors})
+    # authors = Author.objects.all()
+    data = create_country_db()
+    for i in data:
+        if Country.objects.filter(Country=i["Country"]):
+            print("match")
+            print("match")
+            print("match")
+            print("match")
+            print("match")
+        else:
+            Country.objects.create(
+                country_name=i['Country'],
+                capital_city=i['Capital city'],
+                size_rank=i['Rank'],
+                population_2008=i['2008 Population'],
+                land_area_sq_km=i['Land_area_sq_km']
+            )
+    countries = Country.objects.all()
+    return render(request, 'whichisblank/home.html', {"countries": countries,
+                                                      "data": data})
+
 
