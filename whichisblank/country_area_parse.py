@@ -8,9 +8,14 @@ def create_country_db():
     dict = {}
     pk = 1
     for i in reader:
-        dict[pk] = {"Ran}
-        new_list.append(i['Rank'])
+        dict[pk] = {"rank": i['rank'],
+                    "country": i["country"],
+                    "land_area_km": i['land_area_km'],
+                    'population': i["population_2008"]}
+        # dict['Country'] =
+        pk += 1
+        # new_list.append(i['Rank'])
         # pass
-    return new_list
+    return dict
 
 create_country_db()

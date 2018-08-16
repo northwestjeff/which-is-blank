@@ -22,10 +22,9 @@ def signup(request):
 
 
 def home(request):
-    # authors = Author.objects.all()
     data = create_country_db()
-    data_list = []
-    example = type(data)
+    # data_list = []
+    # example = type(data)
     # for i in data:
     #     data_list.append(i)
     #     if Country.objects.filter(Country=i["Country"]):
@@ -42,8 +41,8 @@ def home(request):
     countries = Country.objects.all()
 
     return render(request, 'whichisblank/home.html', {"countries": countries,
-                                                      "data": data,
-                                                      "example":example,
-                                                      "data_list":data_list})
+                                                      "data": data
+                                                      # "example":example,
+                                                      })
 
 

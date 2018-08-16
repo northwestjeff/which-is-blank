@@ -1,4 +1,4 @@
-Rank,Country,Capital city,2008 Population,2002_population,Population_growth_2002_2008,Land_area_sq_km,Population_density_pop_per_sq_km
+rank,country,capital_city,population_2008,population_2002,population_growth_2002_2008,land_area_km,population_density_pop_per_sq_km
 1,China,Beijing,1330045000,1284303705,0.0356,9596960,138.6
 2,India,New Delhi,1147996000,1045845226,0.0977,3287590,349.2
 3,United States of America,Washington DC,303825000,280562489,0.0829,9629091,31.6

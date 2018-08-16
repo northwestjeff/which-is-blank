@@ -1,26 +1,21 @@
-
 {% extends 'base.html' %}
 
 {% block content %}
-    <h3>from home.html</h3>
+<h3>from home.html</h3>
 
-    {{countries|length}}{% for i in countries %}
-        {{i.country_name}}
-    {% endfor %}
+<!--data {{ data }}<br>-->
 
-    {{ data }}
 
-    {% for i in data %}
-        {{i.id}}
-    {% endfor %}
-
-    {{example}}
-
+{% for k,v in data.items%}
+    <!--k:{{k}}-->
+    Rank:{{v.rank}}
+    Country: {{v.country}}
+    Size: {{v.land_area_km}} KMs
+    Population: {{v.population}}
 <br>
-{{data_list}}
-
-
+{% endfor %}
 
 {% endblock %}
+
 
 
