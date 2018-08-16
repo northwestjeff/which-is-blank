@@ -24,23 +24,26 @@ def signup(request):
 def home(request):
     # authors = Author.objects.all()
     data = create_country_db()
-    for i in data:
-        if Country.objects.filter(Country=i["Country"]):
-            print("match")
-            print("match")
-            print("match")
-            print("match")
-            print("match")
-        else:
-            Country.objects.create(
-                country_name=i['Country'],
-                capital_city=i['Capital city'],
-                size_rank=i['Rank'],
-                population_2008=i['2008 Population'],
-                land_area_sq_km=i['Land_area_sq_km']
-            )
+    data_list = []
+    example = type(data)
+    # for i in data:
+    #     data_list.append(i)
+    #     if Country.objects.filter(Country=i["Country"]):
+    #         example = "yes"
+    #     else:
+    #         example = "no"
+    #         Country.objects.create(
+    #             country_name=i['Country'],
+    #             capital_city=i['Capital city'],
+    #             size_rank=i['Rank'],
+    #             population_2008=i['2008 Population'],
+    #             land_area_sq_km=i['Land_area_sq_km']
+    #         )
     countries = Country.objects.all()
+
     return render(request, 'whichisblank/home.html', {"countries": countries,
-                                                      "data": data})
+                                                      "data": data,
+                                                      "example":example,
+                                                      "data_list":data_list})
 
 
