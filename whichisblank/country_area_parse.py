@@ -11,7 +11,8 @@ def create_country_db():
         dict[pk] = {"rank": i['rank'],
                     "country": i["country"],
                     "land_area_km": i['land_area_km'],
-                    'population': i["population_2008"]}
+                    'population': i["population_2008"],
+                    "capital_city": i["capital_city"]}
         # dict['Country'] =
         pk += 1
         # new_list.append(i['Rank'])
