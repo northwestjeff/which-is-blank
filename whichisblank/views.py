@@ -20,6 +20,11 @@ def signup(request):
         form = UserCreationForm()
     return render(request, 'whichisblank/signup.html', {'form': form})
 
+# def login(request):
+#     if request.method == "POST":
+#
+
+
 
 def home(request):
     data = create_country_db()

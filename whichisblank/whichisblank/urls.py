@@ -17,6 +17,8 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path
 import views as which_views
+from django.contrib.auth import views as auth_views
+
 
 
 
@@ -24,7 +26,9 @@ import views as which_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', which_views.home, name='home'),
-    url(r'^signup/$', which_views.signup, name='signup')
+    url(r'^signup/$', which_views.signup, name='signup'),
+    url(r'^login/$', auth_views.login, {'template_name': 'whichisblank/login.html'}, name='login'),
+    url(r'^logout/$', auth_views.logout, name='logout'),
 ]
 
 

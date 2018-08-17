@@ -69,6 +69,11 @@ TEMPLATES = [
     },
 ]
 
+# Default redirect from login is /accounts/profile/
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
+
+
 WSGI_APPLICATION = 'whichisblank.wsgi.application'
 
 
