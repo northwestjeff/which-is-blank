@@ -22,8 +22,13 @@ class Comparison(models.Model):
     user = models.ForeignKey(User, related_name="user_comp_instance", on_delete=models.CASCADE)
     first_comp = models.ForeignKey(Country, related_name="country_a", on_delete=models.CASCADE)
     second_comp = models.ForeignKey(Country, related_name="country_b", on_delete=models.CASCADE)
-    vote = models.BooleanField()
-    correct = models.BooleanField()
+    # vote = models.BooleanField()
+    # correct = models.BooleanField()
+
+class Selection(models.Model):
+    comparison = models.ForeignKey(Comparison, related_name='comparison', on_delete=models.CASCADE)
+    selection = models.ForeignKey(Country, related_name='selected_country', on_delete=models.CASCADE)
+    right_answer = models.BooleanField()
 
 
 

@@ -1,10 +1,12 @@
+import random
 import csv
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
 from country_area_parse import create_country_db
 
-from whichisblank.models import User, Author, Country
+
+from whichisblank.models import Country, Comparison
 
 def signup(request):
     if request.method == "POST":
@@ -51,4 +53,26 @@ def home(request):
                                                       "example": example,
                                                       "data": data})
 
+def random_assignment():
+    countries = Country.objects.all()
+    a = random.choice(countries)
+    return a
 
+def no_dup_second(a):
+    b = random_assignment()
+    if a == b:
+        b = random_assignment()
+    return b
+
+
+
+
+
+def play(request):
+    country_a = random_assignment()
+    country_b = no_dup_second(country_a)
+
+
+
+    return render(request, 'whichisblank/play.html', {"country_a":country_a,
+                                                      "country_b":country_b})
