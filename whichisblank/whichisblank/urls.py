@@ -29,7 +29,8 @@ urlpatterns = [
     url(r'^signup/$', which_views.signup, name='signup'),
     url(r'^login/$', auth_views.login, {'template_name': 'whichisblank/login.html'}, name='login'),
     url(r'^logout/$', auth_views.logout, name='logout'),
-    url(r'^play/$', which_views.play, name='play')
+    url(r'^play/$', which_views.play, name='play'),
+    url(r'^comp-history/$', which_views.comp_history, name='comp-history')
 ]
 
 

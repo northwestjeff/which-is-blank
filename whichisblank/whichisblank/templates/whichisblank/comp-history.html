@@ -1,0 +1,19 @@
+{%extends 'base.html'%}
+
+
+
+{%block content%}
+
+
+<h4>
+    All
+</h4>
+{{comp_instances}}
+
+<br><br><br>
+<h4>Forloop:</h4>
+{%for i in comp_instances%}
+    i <br>
+{%endfor%}
+
+{%endblock%}

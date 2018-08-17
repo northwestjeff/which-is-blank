@@ -6,7 +6,7 @@ from django.contrib.auth.forms import UserCreationForm
 from country_area_parse import create_country_db
 
 
-from whichisblank.models import Country, Comparison
+from whichisblank.models import Country, Comparison, Selection
 
 def signup(request):
     if request.method == "POST":
@@ -66,13 +66,14 @@ def no_dup_second(a):
 
 
 
-
-
 def play(request):
     country_a = random_assignment()
     country_b = no_dup_second(country_a)
-
-
-
+    #Todo add these instances to the db with an objects.create using the countries above
     return render(request, 'whichisblank/play.html', {"country_a":country_a,
                                                       "country_b":country_b})
+
+def comp_history(request):
+    comp_instances = Comparison.objects.all() #TODO There are no objects because there is no .create in play()
+    return render(request, 'whichisblank/comp-history.html', {"comp_instances": comp_instances,
+                                                      })
