@@ -29,14 +29,17 @@ def home(request):
             print("country name found")
             pass
         else:
-            print("country name not found")
-            Country.objects.create(
-                        country_name=i['country'],
-                        capital_city=i['capital_city'],
-                        size_rank=i['rank'],
-                        population_2008=i['population'],
-                        land_area_sq_km=i['land_area_km'])
-            print("adding country to db")
+            try:
+                print("country name not found")
+                print(i['country'])
+                Country.objects.create(
+                            country_name=i['country'],
+                            capital_city=i['capital_city'],
+                            size_rank=i['rank'],
+                            population_2008=i['population'],
+                            land_area_sq_km=i['land_area_km'])
+            except:
+                print("except error")
     countries = Country.objects.all()
 
     return render(request, 'whichisblank/home.html', {"countries": countries,

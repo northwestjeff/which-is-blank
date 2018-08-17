@@ -15,4 +15,16 @@ class Country(models.Model):
     population_2008 = models.IntegerField()
     land_area_sq_km = models.IntegerField()
 
+    def __str__(self):
+        return self.country_name
+
+class Comparison(models.Model):
+    user = models.ForeignKey(User, related_name="user_comp_instance", on_delete=models.CASCADE)
+    first_comp = models.ForeignKey(Country, related_name="country_a", on_delete=models.CASCADE)
+    second_comp = models.ForeignKey(Country, related_name="country_b", on_delete=models.CASCADE)
+    vote = models.BooleanField()
+    correct = models.BooleanField()
+
+
+
 
