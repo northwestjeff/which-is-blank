@@ -4,6 +4,8 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
 from country_area_parse import create_country_db
+# from services import add_countries_to_model
+from services import add_countries_to_model
 
 
 from whichisblank.models import Country, Comparison, Selection
@@ -33,12 +35,9 @@ def home(request):
     example = ""
     for i in data.values():
         if Country.objects.filter(country_name=i['country']):
-            print("country name found")
             pass
         else:
             try:
-                print("country name not found")
-                print(i['country'])
                 Country.objects.create(
                             country_name=i['country'],
                             capital_city=i['capital_city'],
@@ -69,7 +68,10 @@ def no_dup_second(a):
 def play(request):
     country_a = random_assignment()
     country_b = no_dup_second(country_a)
-    #Todo add these instances to the db with an objects.create using the countries above
+    if request.user.is_authenticated:
+        user = request.user
+        add_countries_to_model(user, country_a, country_b)
+        #Todo add these instances to the db with an objects.create using the countries above
     return render(request, 'whichisblank/play.html', {"country_a":country_a,
                                                       "country_b":country_b})
 

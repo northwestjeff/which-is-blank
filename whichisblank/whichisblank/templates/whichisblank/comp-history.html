@@ -8,12 +8,12 @@
 <h4>
     All
 </h4>
-{{comp_instances}}
+{{comp_instances.}}
 
 <br><br><br>
 <h4>Forloop:</h4>
 {%for i in comp_instances%}
-    i <br>
+    {{i.first_comp}} vs. {{i.second_comp}}<br>
 {%endfor%}
 
 {%endblock%}
